@@ -11,6 +11,7 @@ $estimations = $yaml->parse(file_get_contents('./estimations.yml'));
 $scope = $yaml->parse(file_get_contents('./scope.yml'));
 $stories = $yaml->parse(file_get_contents('./stories.yml'));
 $technologies = $yaml->parse(file_get_contents('./technologies.yml'));
+$doubts = $yaml->parse(file_get_contents('./doubts.yml'));
 ?>
 <!DOCTYPE html>
 <html>
@@ -20,6 +21,20 @@ $technologies = $yaml->parse(file_get_contents('./technologies.yml'));
 </head>
 <body>
 <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Doubts</h3>
+            <ul>
+                <?php
+                foreach ($doubts as $doubt) {
+                    ?>
+                    <li><?= $doubt ?></li>
+                <?php
+                }
+                ?>
+            </ul>
+        </div>
+    </div>
     <div class="row">
         <div class="col-md-12">
             <h2>Technologies</h2>

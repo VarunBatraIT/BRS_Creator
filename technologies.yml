@@ -23,3 +23,7 @@ Permissions:
 Coding:
   Render/Check Questions:
     Strategy Pattern: http://www.oodesign.com/strategy-pattern.html
+  Test/Page/Subject:
+    STI: http://samurails.com/tutorial/single-table-inheritance-with-rails-4-part-1/
+  Testing:
+    BDD: http://code.tutsplus.com/courses/bdd-in-rails
