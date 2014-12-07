@@ -1,0 +1,25 @@
+When Choosing Rails:
+Front End:
+  Social Registration:
+    omniauth : https://github.com/intridea/omniauth
+  User Registration:
+    Devise: https://github.com/plataformatec/devise
+  Questions Wizard:
+    Wicked: https://github.com/schneems/wicked
+  Design:
+    Twitter Bootstrap: http://getbootstrap.com/
+  Templating:
+    Slim: http://slim-lang.com/
+  Social Sharing:
+   ShareThis: http://www.sharethis.com/
+Backend:
+  Admin Panel:
+    Rails Admin: https://github.com/sferik/rails_admin
+  Chart:
+    jqPlot: http://www.jqplot.com/
+Permissions:
+  RBAC:
+    Pundit: https://github.com/elabs/pundit
+Coding:
+  Render/Check Questions:
+    Strategy Pattern: http://www.oodesign.com/strategy-pattern.html

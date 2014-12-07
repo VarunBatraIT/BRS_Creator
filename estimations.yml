@@ -1,0 +1,48 @@
+Getting Ready:
+  Backend Bootstrapping (min. coding to make backend work): 12
+  Frontend Bootstrapping (min. coding to make frontend work): 6
+  User Registration and Login: 5
+  Bootstrapping Social Login: 6
+  Enable facebook login: 1
+  Enable google login: 1
+  Static Wizard with Static Questions under Static Tests: 10
+  Setting up Staging and Dev servers: 5
+  Making it deployable to see daily progress: 6
+Displaying Tests & Questions from Database:
+  Displaying Dynamic Subjects: 3
+  Displaying Dynamic Test: 5
+  Bootstraping Questions Parser: 8
+  Dynamic Display of Multiple Choice Questions: 8
+  Dynamic Display of Sorting Choice Questions: 12
+  Dynamic Display of Cloze Questions: 12
+Ability to answer Questions by Users:
+  User can submit answers for Multiple Choice Questions: 6
+  User can submit answers for Sorting Choice Questions: 6
+  User can submit answers for Sorting Cloze Questions: 6
+  User can select subject and test: 6
+  System can Evaluate individual result depending on question weightage: 4
+  Calculating percentile of an Individual: 2
+  Ability to make time limit per test: 4
+Design & MVP Out:
+  Making two static pages, about, privacy policy: 8
+  Implemendting Web Application Design: 24
+  Import of first few questions/answers in database: 8
+  Setting up live Server: 8
+  Share test results in social networking website: 3
+Focus on Admin Panel:
+  Bootstrapping admin panel: 16
+  Admin can see test statistics: 10
+  Admin can review all tests of given by any users: 10
+  Admin can create subjects: 4
+  Admin can create tests under subjects: 6
+Focus on Reporting:
+  Admin can see first test given by user(Important to see which test made user to register): 6
+  Top 10 students and Last 10 users report: 6
+  Destribution of score using bubble charts : 12
+Focus on creating Questions:
+  Admin can create multiple choice questions: 6
+  Admin can create sorting choice questions: 6
+  Admin can create clonze questions: 6
+  Admin can create clonze questions: 6
+Focus on dynamic content:
+  Admin can edit, create, delete or update new pages: 20

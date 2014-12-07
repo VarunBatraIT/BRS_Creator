@@ -1,0 +1,14 @@
+{
+    "name": "codevarun/jbi_assignment",
+    "require": {
+        "symfony/yaml": "3.0.*@dev"
+    },
+    "license": "MTI",
+    "authors": [
+        {
+            "name": "Varun Batra",
+            "email": "codevarun@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}

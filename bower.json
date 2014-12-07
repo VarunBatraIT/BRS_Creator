@@ -1,0 +1,22 @@
+{
+  "name": "jbi_assignment",
+  "version": "0.0.0",
+  "authors": [
+    "Varun Batra <codevarun@gmail.com>"
+  ],
+  "description": "Yet another weekend",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "http://varunbatra.com/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.1"
+  }
+}

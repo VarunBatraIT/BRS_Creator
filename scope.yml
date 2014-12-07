@@ -1,0 +1,35 @@
+Front End:
+  Will be Done:
+    - User can register using email address
+    - Front End Design which will be responsive
+    - User can choose a subject
+    - Wizard based test with time boundation
+    - User can immediately see his score after test is finished
+    - On timeout test will be finished forcedfully
+    - User can see his test results history
+    - User can given same test limited number of times depending on test settings
+    - SEO fields in database only for tests
+    - Each user must be registered to initiate the test
+  Will not be Done (Can be estimated and done on request):
+    - User can invite his friends for a test
+    - User can subscribe to more tests under same subject
+    - User can only give test after email verification
+Back End:
+  Will be Done:
+    - Admin can create/delete/update as many subjects.
+    - Admin can create/delete/update as many tests under subjects.
+    - Admin can configure test like time limit, attempt limit, start and end time.
+    - Admin can see statistic of a test like how many users have attempted and how many were passed.
+    - Admin can see history of a user, how many test a user has given and what was the score of each test.
+    - Admin can create/delete/update Multiple choice questions.
+    - Admin can create/delete/update Sorting choice questions.
+    - Admin can create/delete/update Cloze questions with one blank.
+    - Admin can create/delete/update any user.
+    - Admin can forbid any user from website.
+
+  Will not be Done (Can be estimated and done on request):
+    - Admin will get daily email about statistics.
+    - Admin can make private tests which are hidden for logged out users
+    - There can be more than one Admin
+    - Admin can export result of a test
+    - Admin can export all test results of a user

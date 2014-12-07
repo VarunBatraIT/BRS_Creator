@@ -1,0 +1,51 @@
+#When user clicks on daily
+Admin:
+  I can click on:
+    users: to see all users registered with number of test given
+    a user: to see all tests given by the users with score and number of times same test was given
+    a user: to see all tests given by the users with score and number of times same test was given
+    edit user: to edit details of a user like first name, last name, email address
+    delete this user: to delete current user
+    forbid user from giving test: so that user can't give any further tests
+    disable user: so that user can't login
+    create new subject: To make a new subject
+    create new test: To make a new test under subject
+    create new question: To make a new question under test
+  when I:
+     click on create new question: I should see list of questions I can choose from
+     select a Question type: I should see question and asnwer format depending on question I have chosen
+     select a Multiple type question: I should see a textbox to write question, four input box for options and I can select one of them as answer
+     select a Sorting type question: I should see two blanks with ability to add unlimited list in correct order. System will input it to user in random order.
+     select a Cloze type question: I should be able to write a sentence in textarea and type one or two words as an answer in input field, system should show these as blanks when displayed to user.
+User:
+  I can click on:
+    my account: to see my test history
+    logout button: to logout
+    test history: to see all the tests I have given with scores
+    retake test: to take a test again
+    subjects: to find tests under any subject
+    tests: to take a test
+    next: to go to next question
+    previous: to go to previous question
+    option: to answer a question and go to next question
+    finish: to terminate test even if some questions are left to answer
+    various social buttons: to share my results with my friends on facebook, twitter etc
+    change password: to change my password
+  I can not click on:
+    previous: when I am on first question
+    next: when I am on last question
+  I can not see:
+    results of other users: because I don't have permission
+  when I:
+    finish a test: I will see my result of test
+Guest:
+  I can click:
+    on create new account: to make my account
+    login: to login if I already have an account
+  I can not see:
+    my account: since I am guest
+  I can use:
+    my facebook account: to register or login
+    my google account: to register or login
+  if I:
+   I am using social media networking website for registration: I shouldn't get email verification email
