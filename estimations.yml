@@ -27,7 +27,7 @@ Design & MVP Out:
   Making two static pages, about, privacy policy: 8
   Implemendting Web Application Design: 24
   Import of first few questions/answers in database: 8
-  Setting up live Server: 8
+  Setting up live Server: 4
   Share test results in social networking website: 3
 Focus on Admin Panel:
   Bootstrapping admin panel: 16
@@ -46,3 +46,8 @@ Focus on creating Questions:
   Admin can create clonze questions: 6
 Focus on dynamic content:
   Admin can edit, create, delete or update new pages: 20
+Focus on Performance:
+  Minimizing Queries: 8
+  Caching Improvements: 16
+  Frontend Optimization: 8
+  Setting up logs: 4

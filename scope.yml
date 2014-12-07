@@ -1,14 +1,15 @@
 Front End:
   Will be Done:
     - User can register using email address
+    - User can register using social media account viz. facebook, google+
     - Front End Design which will be responsive
     - User can choose a subject
     - Wizard based test with time boundation
-    - User can immediately see his score after test is finished
-    - On timeout test will be finished forcedfully
+    - User can immediately see his score after the test is finished
+    - On timeout test will be finished even if some questions were left unanswered
     - User can see his test results history
-    - User can given same test limited number of times depending on test settings
-    - SEO fields in database only for tests
+    - User can give same test limited number of times depending on test settings
+    - SEO fields in database only for tests and pages
     - Each user must be registered to initiate the test
   Will not be Done (Can be estimated and done on request):
     - User can invite his friends for a test

@@ -5,7 +5,7 @@
     "Varun Batra <codevarun@gmail.com>"
   ],
   "description": "Yet another weekend",
-  "main": "index.html",
+  "main": "index.php",
   "license": "MIT",
   "homepage": "http://varunbatra.com/",
   "private": true,
