@@ -16,6 +16,7 @@ $doubts = $yaml->parse(file_get_contents('./doubts.yml'));
 <!DOCTYPE html>
 <html>
 <head>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Scope Document</title>
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
 </head>
