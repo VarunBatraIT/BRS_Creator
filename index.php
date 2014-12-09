@@ -189,7 +189,7 @@ function efficient_hour($estimations)
                     <td>
                         ETA in number of Weeks with <?= AVERAGE_WORK_FORCE ?> workforce working on average
                     </td>
-                    <td><?= $ETA ?>  Weeks & MVP out at the end of week <?= ceil($MVP) ?></td>
+                    <td><?= $ETA ?> </td>
                 </tr>
                 <tr class="danger">
                     <td>
