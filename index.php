@@ -1,17 +1,25 @@
 <?php
-define('COST_PER_HOUR', 20);
-define('CURRENCY', '$');
 require "vendor/autoload.php";
 require "lib.php";
 use Symfony\Component\Yaml\Parser;
 
 $yaml = new Parser();
-
+$config = $yaml->parse(file_get_contents('./config.yml'));
+foreach ($config as $string => $value) {
+    define(strtoupper($string), $value);
+}
 $estimations = $yaml->parse(file_get_contents('./estimations.yml'));
 $scope = $yaml->parse(file_get_contents('./scope.yml'));
 $stories = $yaml->parse(file_get_contents('./stories.yml'));
 $technologies = $yaml->parse(file_get_contents('./technologies.yml'));
 $doubts = $yaml->parse(file_get_contents('./doubts.yml'));
+function efficient_hour($estimations)
+{
+    $workable = (float)($estimations * (WORKING_HOURS_PER_DAY / ACTUAL_WORKING_HOURS_PER_DAY));
+    return ROUND_OFF ? ceil($workable) : $workable;
+
+}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -132,8 +140,12 @@ $doubts = $yaml->parse(file_get_contents('./doubts.yml'));
                 </thead>
                 <tbody>
                 <?php
-                $grand_total_hours = 0;
+                $grand_total_hours = $MVP = 0;
                 foreach ($estimations as $heading => $estimation) {
+                    if ($heading == 'MVP') {
+                        $MVP = $grand_total_hours;
+                        continue;
+                    }
                     $total_hours = 0;
                     ?>
                     <tr class="info">
@@ -142,6 +154,8 @@ $doubts = $yaml->parse(file_get_contents('./doubts.yml'));
 
                     <?php
                     foreach ($estimation as $line => $hours) {
+                        $hours = efficient_hour($hours);
+
                         $total_hours += $hours;
                         ?>
                         <tr>
@@ -164,6 +178,27 @@ $doubts = $yaml->parse(file_get_contents('./doubts.yml'));
                     <td><?= 'Total Hours ' . $grand_total_hours ?></td>
                     <td><?= ($grand_total_hours * COST_PER_HOUR) . CURRENCY ?></td>
                 </tr>
+                <tr class="danger">
+                    <?php
+                    $ETA = ($grand_total_hours / (AVERAGE_WORK_FORCE * DAYS_PER_WEEK * ACTUAL_WORKING_HOURS_PER_DAY));
+                    $ETA = $ETA + (DELAY_IN_PERCENT) * ($ETA) / 100;
+                    $MVP = ($MVP / (AVERAGE_WORK_FORCE * DAYS_PER_WEEK * ACTUAL_WORKING_HOURS_PER_DAY));
+                    $MVP = $MVP + (DELAY_IN_PERCENT) * ($MVP) / 100;
+
+                    ?>
+                    <td>
+                        ETA in number of Weeks with <?= AVERAGE_WORK_FORCE ?> workforce working on average
+                    </td>
+                    <td><?= $ETA ?>  Weeks & MVP out at the end of week <?= ceil($MVP) ?></td>
+                </tr>
+                <tr class="danger">
+                    <td>
+                        MVP out after week
+                    </td>
+                    <td><?= ceil($MVP) ?></td>
+
+                </tr>
+
 
                 </tbody>
             </table>

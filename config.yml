@@ -1,0 +1,8 @@
+cost_per_hour: 20
+currency: $
+working_hours_per_day: 9
+actual_working_hours_per_day: 5
+average_work_force: 2
+round_off: 1
+days_per_week: 5
+delay_in_percent: 10
